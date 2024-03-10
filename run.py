@@ -1,7 +1,4 @@
 import subprocess
-import shlex
-
-import ffmpeg
 from twisted.internet import reactor
 from twisted.protocols import basic
 from twisted.internet.protocol import Factory

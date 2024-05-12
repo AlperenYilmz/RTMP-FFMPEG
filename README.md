@@ -1,2 +1,2 @@
-# RTMP-FFMPEG
-tst.py takes a static mp4 video as an input through ffmpeg script and output as live local stream
+# RTMP-FFMPEG (Work In Progress!)
+- A simple RTMP based local streaming server that would grab webcam record as input

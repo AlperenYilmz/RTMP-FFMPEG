@@ -1,6 +1,6 @@
 # RTMP-FFMPEG
 ## Description
-- This project was given to me as a recruitment assesment. The project case can be explained as:
+- This project was given as a recruitment task. The project case can be explained as:
 > Build an RTMP based, local host stream platform. Any available RTMP server can be used. Publisher client must use an FFMPEG for streaming. Also derive a system-service to launch the entire program at once. Stream must have an random overlay image, which will be handled with requests library, using python.
 
 ## Technical
@@ -8,9 +8,9 @@
 ![UML](<UML.png>)
 
 ## Explanation
-- overlay.py script downloads a 160x160 bit image from picsum.photos
-- publisher.bat is the client with ffmpeg script, loops the video and and overlay image
-- launch.ps1 launches the system on a single terminal screen.
+- **overlay.py** downloads a 160x160 bit image from picsum.photos
+- **publisher.bat** is the client with ffmpeg script, loops the video and and overlay image
+- **launch.ps1** launches the system on a single terminal screen.
 
 ## Instructions
 - Clone this repo
@@ -35,8 +35,8 @@
     }
 ```
 
-- Then launch SRS with admin privileges. Add an exclusion to firewall for port 1935 (it used to be used by flash, so sometimes firewalls block it)
-- Run **launch.ps1** by right click -> run with powershell
+- Then launch SRS with admin privileges. Add an exclusion to firewall for port 1935 (it used to be flash player port, so sometimes firewalls block it)
+- Run **launch.ps1** with powershell
 - Open VLC or OBS or similar, select network capture and listen to localhost as: **rtmp://localhost/live/stream**
 
 ## Overview
